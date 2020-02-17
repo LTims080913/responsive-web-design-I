@@ -88,14 +88,15 @@ h1, h2, h3, h4, h5 {
 
 
 div.links{
-	width: 60%;
+	width: 100%;
 }
 
 .IOD{
-	width:50%;
+	width:45%;
 	font-size: 80px;
 	padding: 80px 80px 0px 80px;
-	text-align: center;
+    text-align: center;
+    flex-wrap: wrap;
 	
 }
 .circlecode{
@@ -127,7 +128,7 @@ div.links{
 	border-bottom: 1px solid black;
 	display: flex;
 	justify-content: space-between;
-	width: 85%;
+	width: 100%;
 }
 
 .con1{
@@ -372,4 +373,55 @@ ul{
 	line-height: 1.5;
 	margin-left: 20px;
 	margin-top: 35px;
+}
+
+
+/* Responsive Web Design */
+
+@media (max-width: 800px){
+    .navbar{
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+    div .links{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+   .logo{
+       justify-content: center;
+       margin-top: 2vh;
+   }
+   .navbar .links a{
+       margin: 0%;
+     
+   }
+   .links{
+       display: flex;
+       justify-content: space-between;
+       margin-top: 5vh;
+   }
+   .IOD{
+        text-align: center;
+        font-size: 100px;
+        width: 100%;
+
+   }
+   .circlecode{
+        display:none;
+   }
+  .gs{
+      margin: 0 0 5vh 0;
+  }
+}
+
+@media (max-width: 500px){
+    .navbar{
+        width: 100%;
+    }
+    div .links{
+        display: flex;
+        width: 100%
+        flex-direction: column;
+    }
 }
