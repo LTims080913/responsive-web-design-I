@@ -159,19 +159,16 @@ div.links{
 .services{
 
 	width: 30%;
-	font-family: 'Concert One', cursive;
 }
 
 .product{
 
 	width: 30%;
-	font-family: 'Gloria Hallelujah', cursive;
 }
 
 .vision{
 
 	width: 30%;
-	font-family: 'Parisienne', cursive;
 }
 
 .contact{
@@ -419,9 +416,45 @@ ul{
     .navbar{
         width: 100%;
     }
-    div .links{
+    .links{
         display: flex;
-        width: 100%
+        width: 100%;
         flex-direction: column;
+        
+    }
+    .navbar .links a{
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        text-align: center;
+        padding: 2vh;
+
+    }
+    .home{
+        border-top: 1px solid lightgray;
+    }
+    .IOD{
+        font-size: 10vh;
+        text-align: center;
+        padding: 10% 15% 0;
+        
+    }
+    .con1{
+        flex-wrap: wrap;
+    }
+    
+    .con2{
+        flex-wrap: wrap;
+    }
+    .para{
+        width: 100%;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .contact{
+        width: 50%;
+    }
+    .cr{
+        width: 100%;
+        margin-top: 2vh;
     }
 }
