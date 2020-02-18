@@ -127,14 +127,14 @@ div.links{
 .top{
 	border-bottom: 1px solid black;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 100%;
 }
 
 .con1{
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
+    width: 100%;
 }
 .features{
 
@@ -457,4 +457,120 @@ ul{
         width: 100%;
         margin-top: 2vh;
     }
+}
+
+
+/* !!!STRETCH GOAL!!! */
+
+/* CSS FOR SERVICES PAGE */
+
+
+.services-header-img{
+	margin-top: 3%;
+	width: 100%;
+}
+
+.sect0{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding-bottom: 20px;
+}
+.sect0 p  {
+	padding-bottom: 20px;
+	
+
+}
+.sect0 .topp{
+	border-bottom: 1px solid black;
+}
+.graybox{
+	border: 1px solid black;
+	background-color: lightgray;
+	width: 40%;
+}
+
+.graybox h3 {
+	margin:2%;
+	
+}
+.graybox p {
+	margin:2%;
+	
+}
+.graybox button {
+	margin:2%;
+	
+}
+.sect{
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 5%;
+	justify-content: space-between;
+	padding-top: 5%;
+}
+
+.lm{
+	width: 45%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+	border-radius: 10px;
+
+}
+
+.bottom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-top: 1px solid black;
+}
+.bottomsect{
+	margin-top: 5%;
+	width: 49%;
+}
+.services-info-img{
+	margin-top: 5%;
+}
+.CR{
+	margin-top: 3%;
+	text-align: center;
+}
+ul{
+	list-style-type: square;
+	line-height: 1.5;
+	margin-left: 20px;
+}
+
+
+/* MEDIA QUARRY FOR SERVICES PAGE */
+@media (max-width: 800px){
+.sect{
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.graybox{
+	width: 48%;
+	margin-top: 3vh;
+}
+
+.lm{
+	width: 80%;
+	height: 6vh;
+	margin-left: 5%;
+}
+.bottom{
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: wrap;
+}
+.bottomsect{
+	width: 100%;
+}
+}
+
+@media (max-width: 500px){
+	.services-info-img{
+		width: 100%;
+	}
 }
